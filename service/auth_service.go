@@ -3,10 +3,10 @@ package service
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/OscarYuen/go-graphql-starter/context"
-	"github.com/OscarYuen/go-graphql-starter/model"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/op/go-logging"
+	"gographqlstart/context"
+	"gographqlstart/model"
 	"time"
 )
 

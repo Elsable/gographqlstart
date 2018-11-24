@@ -2,8 +2,8 @@ package loader
 
 import (
 	"fmt"
-	"github.com/OscarYuen/go-graphql-starter/model"
-	"github.com/OscarYuen/go-graphql-starter/service"
+	"gographqlstart/model"
+	"gographqlstart/service"
 	"golang.org/x/net/context"
 	"gopkg.in/nicksrandall/dataloader.v5"
 	"sync"

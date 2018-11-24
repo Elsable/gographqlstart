@@ -1,5 +1,10 @@
 ## Go Graphql Starter
-[![GitHub license](https://img.shields.io/github/license/OscarYuen/go-graphql-starter.svg)](https://github.com/OscarYuen/go-graphql-starter/blob/master/LICENSE)
+
+Graphql starter template with PostgreSQL
+
+Original repository at: https://github.com/OscarYuen/go-graphql-start/
+
+[![GitHub license](https://img.shields.io/github/license/OscarYuen/go-graphql-starter.svg)](https://blob/master/LICENSE)
 
 
 This project aims to use [graph-gophers/graphql-go](https://github.com/graph-gophers/graphql-go) to build a starter web application. This project has already been used as backend application in production. 

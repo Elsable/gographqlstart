@@ -2,10 +2,10 @@ package resolver
 
 import (
 	"errors"
-	gcontext "github.com/OscarYuen/go-graphql-starter/context"
-	"github.com/OscarYuen/go-graphql-starter/loader"
-	"github.com/OscarYuen/go-graphql-starter/service"
 	"github.com/op/go-logging"
+	gcontext "gographqlstart/context"
+	"gographqlstart/loader"
+	"gographqlstart/service"
 	"golang.org/x/net/context"
 )
 

@@ -2,9 +2,9 @@ package service
 
 import (
 	"database/sql"
-	"github.com/OscarYuen/go-graphql-starter/model"
 	"github.com/jmoiron/sqlx"
 	"github.com/op/go-logging"
+	"gographqlstart/model"
 )
 
 type RoleService struct {

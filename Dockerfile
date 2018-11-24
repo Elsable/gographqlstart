@@ -2,7 +2,7 @@
 # and a workspace (GOPATH) configured at /go.
 FROM golang:latest
 
-ENV SRC_DIR=/go/src/github.com/OscarYuen/go-graphql-starter/
+ENV SRC_DIR=/go/src/
 # Add the source code:
 COPY . $SRC_DIR
 WORKDIR $SRC_DIR
