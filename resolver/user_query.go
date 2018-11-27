@@ -1,7 +1,7 @@
 package resolver
 
 import (
-	"errors"
+	// "errors"
 	"github.com/op/go-logging"
 	gcontext "gographqlstart/context"
 	"gographqlstart/loader"
@@ -28,9 +28,9 @@ func (r *Resolver) Users(ctx context.Context, args struct {
 	First *int32
 	After *string
 }) (*usersConnectionResolver, error) {
-	if isAuthorized := ctx.Value("is_authorized").(bool); !isAuthorized {
-		return nil, errors.New(gcontext.CredentialsError)
-	}
+	// if isAuthorized := ctx.Value("is_authorized").(bool); !isAuthorized {
+	// 	return nil, errors.New(gcontext.CredentialsError)
+	// }
 	userId := ctx.Value("user_id").(*string)
 
 	users, err := ctx.Value("userService").(*service.UserService).List(args.First, args.After)

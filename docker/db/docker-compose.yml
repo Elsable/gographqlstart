@@ -2,8 +2,8 @@
 version: "3.2"
 services:
   pg:
-    image: postgres:11
+    image: postgres:10
     volumes: 
-      - ./data:/var/lib/postgresql
+      - ./data10:/var/lib/postgresql
     ports:
       - 5432:5432

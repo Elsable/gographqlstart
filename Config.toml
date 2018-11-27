@@ -6,7 +6,7 @@ host = "localhost"
 port = "5432"
 user = "postgres"
 password = ""
-dbname = "postgres"
+dbname = "graphd1"
 
 [log]
 debug-mode = true

@@ -10,7 +10,10 @@ import (
 
 func OpenDB(config *Config) (*sqlx.DB, error) {
 	log.Println("Database is connecting... ")
-	db, err := sqlx.Open("postgres", fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", config.DBHost, config.DBPort, config.DBUser, config.DBPassword, config.DBName))
+	// connectionStr := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", config.DBHost, config.DBPort, config.DBUser, config.DBPassword, config.DBName)
+	connectionStr := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable", config.DBHost, config.DBUser, config.DBName)
+	fmt.Printf("Connecting to: %s\n", connectionStr)
+	db, err := sqlx.Open("postgres", connectionStr)
 
 	if err != nil {
 		panic(err.Error())
